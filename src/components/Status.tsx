@@ -218,7 +218,7 @@ export default function Status() {
 
   return (
     <div className="flex flex-col h-full bg-app">
-      <header className="px-6 pt-12 pb-6">
+      <header className="px-6 pt-page-header pb-6">
         <h1 className="text-[22px] font-semibold text-primary tracking-tight">Insights</h1>
         <p className="text-[13px] font-medium text-secondary mt-1">Your wake-up patterns</p>
       </header>

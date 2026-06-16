@@ -13,7 +13,7 @@ interface PlanDetailProps {
 export default function PlanDetail({ plan, onBack, onEdit, onDelete }: PlanDetailProps) {
   return (
     <div className="flex flex-col h-full bg-app">
-      <header className="px-6 pt-12 pb-4 flex items-center justify-between border-b border-divider">
+      <header className="px-6 pt-page-header pb-4 flex items-center justify-between border-b border-divider">
         <div className="flex items-center gap-4">
           <button onClick={onBack} className="p-2 -ml-2 hover:bg-black/5 rounded-full transition-colors text-primary">
             <ArrowLeft className="w-5 h-5" />

@@ -218,7 +218,7 @@ export default function Library({ settings, plans, onUpdateSettings, onUpdatePla
 
   return (
     <div className="flex flex-col h-full bg-app">
-      <header className="px-6 pt-12 pb-6">
+      <header className="px-6 pt-page-header pb-6">
         <h1 className="text-2xl font-black text-gray-800 tracking-tight">Task Library</h1>
         <p className="text-sm font-medium text-gray-500 mt-1">
           Select which tasks appear when an alarm requires dismissal.

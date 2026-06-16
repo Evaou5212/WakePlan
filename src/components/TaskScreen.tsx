@@ -473,7 +473,7 @@ export default function TaskScreen({ plan, onComplete, onTimeout }: TaskScreenPr
       onChange={resetCountdown}
       onTouchStart={resetCountdown}
     >
-      <div className="pt-14 px-6 pb-4">
+      <div className="pt-page-header px-6 pb-4">
         <div className="h-1.5 w-full bg-divider rounded-full overflow-hidden">
           <div
             className="h-full bg-primary rounded-full transition-[width] duration-100 ease-linear"

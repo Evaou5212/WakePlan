@@ -208,7 +208,7 @@ export default function CreatePlan({ initialPlan, onSave, onCancel }: CreatePlan
 
   return (
     <div className={`flex flex-col h-full bg-app relative`}>
-      <header className="px-6 pt-12 pb-4 flex items-center justify-between">
+      <header className="px-6 pt-page-header pb-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           {step === 2 && (
             <button onClick={() => setStep(1)} className="p-2 -ml-2 hover:bg-black/5 rounded-full transition-colors text-primary">

@@ -108,8 +108,8 @@ function App() {
   const selectedPlan = plans.find(p => p.id === selectedPlanId);
 
   return (
-    <div className="h-screen w-full bg-black flex items-center justify-center overflow-hidden font-sans text-primary">
-      <div className="w-full h-full max-w-md bg-app relative shadow-2xl overflow-hidden flex flex-col">
+    <div className="app-shell h-dvh min-h-dvh w-full bg-black flex items-center justify-center overflow-hidden font-sans text-primary">
+      <div className="app-frame w-full h-full max-w-md bg-app relative shadow-2xl overflow-hidden flex flex-col">
         
         {view === 'home' && currentTab === 'plans' && (
           <Home 

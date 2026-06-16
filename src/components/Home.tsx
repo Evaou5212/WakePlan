@@ -76,7 +76,7 @@ export default function Home({ plans, onToggle, onCreateNew, onViewDetail, onEdi
         <Plus className="w-8 h-8" />
       </button>
 
-      <header className="px-6 pt-12 pb-6 flex justify-between items-center">
+      <header className="px-6 pt-page-header pb-6 flex justify-between items-center">
         <div>
           <h1 className="text-[28px] font-semibold text-primary tracking-tight">WakePlan</h1>
           <p className="text-[13px] text-secondary mt-1">
