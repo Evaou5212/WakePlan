@@ -1,0 +1,5 @@
+{
+  "name": "WakePlan",
+  "description": "A structured, progressive wake-up alarm application designed to prevent users from unconsciously dismissing alarms while half asleep.",
+  "requestFramePermissions": ["microphone"]
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  .shadow-fab {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  .text-primary {
+    color: #2C2C2C;
+  }
+  .text-secondary {
+    color: #7A7A7A;
+  }
+  .text-disabled {
+    color: #BDBDBD;
+  }
+  .bg-app {
+    background-color: #F8F6F0;
+  }
+  .bg-primary {
+    background-color: #1A1A1A;
+  }
+  .text-primary-blue {
+    color: #4A90E2;
+  }
+  .border-divider {
+    border-color: #E6E6E6;
+  }
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+}
