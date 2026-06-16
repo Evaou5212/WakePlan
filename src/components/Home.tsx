@@ -71,7 +71,7 @@ export default function Home({ plans, onToggle, onCreateNew, onViewDetail, onEdi
       {/* Floating Action Button */}
       <button 
         onClick={onCreateNew}
-        className="absolute bottom-24 right-6 w-14 h-14 bg-primary text-white rounded-full shadow-fab hover:scale-105 transition-transform flex items-center justify-center z-40"
+        className="absolute bottom-above-tab-bar right-6 w-14 h-14 bg-primary text-white rounded-full shadow-fab hover:scale-105 transition-transform flex items-center justify-center z-[60]"
       >
         <Plus className="w-8 h-8" />
       </button>
@@ -93,7 +93,7 @@ export default function Home({ plans, onToggle, onCreateNew, onViewDetail, onEdi
         </div>
       </header>
 
-      <main className="flex-1 overflow-y-auto px-6 pb-32 space-y-6">
+      <main className="flex-1 overflow-y-auto px-6 pb-above-tab-bar space-y-6">
         {/* Next Alarm Countdown */}
         <div className="flex flex-col items-center justify-center text-center py-2 min-h-[120px]">
           <AnimatePresence mode="wait">

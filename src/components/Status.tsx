@@ -223,7 +223,7 @@ export default function Status() {
         <p className="text-[13px] font-medium text-secondary mt-1">Your wake-up patterns</p>
       </header>
 
-      <main className="flex-1 overflow-y-auto px-6 pb-32 space-y-6">
+      <main className="flex-1 overflow-y-auto px-6 pb-above-tab-bar space-y-6">
 
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-[#F6E8A8] rounded-[24px] p-6 shadow-soft">

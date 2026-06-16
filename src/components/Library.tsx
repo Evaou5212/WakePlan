@@ -225,7 +225,7 @@ export default function Library({ settings, plans, onUpdateSettings, onUpdatePla
         </p>
       </header>
 
-      <main className="flex-1 overflow-y-auto p-6 space-y-8 pb-32">
+      <main className="flex-1 overflow-y-auto p-6 space-y-8 pb-above-tab-bar">
         
         {/* Global Toggle */}
         <div className="bg-white/60 p-6 rounded-[24px] shadow-soft flex items-center justify-between">
