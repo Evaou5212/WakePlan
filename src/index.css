@@ -56,6 +56,9 @@ body {
   .pb-above-tab-bar {
     padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px) + 4.5rem);
   }
+  .mb-above-tab-bar {
+    margin-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
   .tab-bar-inner {
     height: 72px;
   }

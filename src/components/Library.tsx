@@ -346,22 +346,23 @@ export default function Library({ settings, plans, onUpdateSettings, onUpdatePla
       {/* Task Settings Modal */}
       <AnimatePresence>
         {editingTask && (
-          <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center bg-black/40 backdrop-blur-sm">
+          <div className="fixed inset-0 z-[100] flex items-end justify-center sm:items-center bg-black/40 backdrop-blur-sm">
             <motion.div 
               initial={{ opacity: 0, y: '100%' }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="bg-app w-full max-w-md rounded-t-[32px] sm:rounded-[32px] p-6 pb-12 sm:pb-6 shadow-2xl relative"
+              className="bg-app w-full max-w-md rounded-t-[32px] sm:rounded-[32px] shadow-2xl relative mb-above-tab-bar sm:mb-0 max-h-[calc(100dvh-72px-env(safe-area-inset-bottom,0px)-1rem)] sm:max-h-[90vh] flex flex-col overflow-hidden"
             >
               <button 
                 onClick={() => setEditingTask(null)}
-                className="absolute top-6 right-6 p-2 bg-app rounded-full text-secondary hover:text-primary transition-colors"
+                className="absolute top-6 right-6 p-2 bg-app rounded-full text-secondary hover:text-primary transition-colors z-10"
               >
                 <X className="w-5 h-5" />
               </button>
-              
-              <h2 className="text-[22px] font-semibold text-primary mb-6">
+
+              <div className="flex-1 overflow-y-auto px-6 pt-6 pb-4">
+              <h2 className="text-[22px] font-semibold text-primary mb-6 pr-10">
                 {TASKS.find(t => t.id === editingTask)?.title} Settings
               </h2>
 
@@ -627,13 +628,16 @@ export default function Library({ settings, plans, onUpdateSettings, onUpdatePla
                   </>
                 )}
               </div>
-              
+              </div>
+
+              <div className="shrink-0 px-6 pt-4 pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))] bg-app rounded-b-[32px] sm:rounded-b-[32px]">
               <button 
                 onClick={() => setEditingTask(null)}
-                className="w-full mt-8 bg-primary text-white py-4 rounded-[16px] font-medium text-[16px] shadow-fab hover:opacity-90 transition-opacity"
+                className="w-full bg-primary text-white py-4 rounded-[16px] font-medium text-[16px] shadow-fab hover:opacity-90 transition-opacity"
               >
                 Done
               </button>
+              </div>
             </motion.div>
           </div>
         )}
