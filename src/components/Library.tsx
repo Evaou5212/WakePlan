@@ -361,7 +361,7 @@ export default function Library({ settings, plans, onUpdateSettings, onUpdatePla
                 <X className="w-5 h-5" />
               </button>
 
-              <div className="flex-1 overflow-y-auto px-6 pt-6 pb-4">
+              <div className="overflow-y-auto px-6 pt-6 pb-4 min-h-0 max-h-[calc(88dvh-7rem)] sm:max-h-[calc(90vh-7rem)]">
               <h2 className="text-[22px] font-semibold text-primary mb-6 pr-10">
                 {TASKS.find(t => t.id === editingTask)?.title} Settings
               </h2>
@@ -630,7 +630,7 @@ export default function Library({ settings, plans, onUpdateSettings, onUpdatePla
               </div>
               </div>
 
-              <div className="shrink-0 px-6 pt-4 pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))] bg-app">
+              <div className="shrink-0 px-6 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom,0px))] sm:pb-6 bg-app">
               <button 
                 onClick={() => setEditingTask(null)}
                 className="w-full bg-primary text-white py-4 rounded-[16px] font-medium text-[16px] shadow-fab hover:opacity-90 transition-opacity"
@@ -638,7 +638,10 @@ export default function Library({ settings, plans, onUpdateSettings, onUpdatePla
                 Done
               </button>
               </div>
-              <div className="shrink-0 h-32 bg-app sm:hidden" aria-hidden="true" />
+              <div
+                className="pointer-events-none absolute left-0 right-0 top-full h-12 bg-app sm:hidden"
+                aria-hidden="true"
+              />
             </motion.div>
           </div>
         )}
