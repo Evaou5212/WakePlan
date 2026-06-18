@@ -3,6 +3,7 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --tab-bar-height: 72px;
 }
 
 html,
@@ -51,16 +52,19 @@ body {
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
   .bottom-above-tab-bar {
-    bottom: calc(72px + env(safe-area-inset-bottom, 0px) + 0.75rem);
+    bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px) + 0.75rem);
   }
   .pb-above-tab-bar {
-    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px) + 4.5rem);
+    padding-bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px) + 4.5rem);
   }
   .mb-above-tab-bar {
-    margin-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+    margin-bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px));
+  }
+  .task-sheet-overlay {
+    bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px));
   }
   .tab-bar-inner {
-    height: 72px;
+    height: var(--tab-bar-height);
   }
   input[type="time"]::-webkit-calendar-picker-indicator {
     display: none;
@@ -68,6 +72,10 @@ body {
 }
 
 @media (max-width: 768px), (display-mode: standalone) {
+  :root {
+    --tab-bar-height: 60px;
+  }
+
   .app-shell {
     background-color: #F8F6F0;
     align-items: stretch;
@@ -83,14 +91,14 @@ body {
   }
 
   .tab-bar-inner {
-    height: 60px;
+    height: var(--tab-bar-height);
   }
 
   .bottom-above-tab-bar {
-    bottom: calc(60px + env(safe-area-inset-bottom, 0px) + 0.75rem);
+    bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px) + 0.75rem);
   }
 
   .pb-above-tab-bar {
-    padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px) + 4rem);
+    padding-bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px) + 4rem);
   }
 }
