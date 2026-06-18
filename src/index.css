@@ -60,9 +60,6 @@ body {
   .mb-above-tab-bar {
     margin-bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px));
   }
-  .task-sheet-overlay {
-    bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px));
-  }
   .tab-bar-inner {
     height: var(--tab-bar-height);
   }
